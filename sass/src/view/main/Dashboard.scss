@@ -1,0 +1,118 @@
+.entitle-cls {
+    width: 100%;
+    font-size: 0.7em;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px 0px 3px 6px;
+	border-left: 3px solid $entitle-left-border-line-color;
+}
+.conference-div-cls {
+    padding: 0 0 0 0.1em;
+    color: $button-bg-color;
+}
+.startup-bold-cls {
+	font-weight: 100;
+}
+.medium-bold-cls {
+	font-weight: 300;
+}
+.total-reg-count-cls {
+    top: 0.3em;
+    left: 0.2em;
+    font-size: 6em;
+    font-weight: 100;
+	position: absolute;
+    color: $button-bg-color;
+}
+.hightlight-text-cls {
+    font-weight: 300;
+    color: $soft-lime-green-color;
+}
+.do-list-cls,
+.new-reg-cls,
+.confdays-cls,
+.total-reg-cls,
+.all-events-cls {
+	@include border-radius(6px);
+	@include box-shadow($box-shadow-variate);
+}
+/*Mobile styling*/
+.phone-dashboard-items-cls,.phone-dashboard-registration-cls {
+    margin :1em 1em;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+}
+.phone-dashboard-confdays-cls{
+    margin :2em 1em 1em 1em;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+}
+.phone-dashboard-dolist-cls{
+    margin: 1em 1em 2em 1em;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+}
+.phone-dashboard-cls{
+    background:#f7f7f7 !important;
+}
+.phone-dashboard-registration-cls{
+    margin :1em 1em;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+    .x-dataview-inner{
+        background:#fff;
+    }
+}
+.phone-dashboard-allevents-cls{
+    margin :1em 1em;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+    .x-body{
+        .x-scroller{
+            background:#fff;
+        }
+    }
+}
+.total-reg-cls{
+    background: #fff;
+}
+
+.entitle-phone-cls{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px 0px 3px 6px;
+    margin-left: 10px;
+    border-left: 3px solid $entitle-left-border-line-color;
+}
+.phone-dashboard-confdays-cls .conference-div-cls {
+    margin: 0 0 0 0.6em !important;
+}
+.float-text-cls{
+    float: right;
+    margin-right:10px;
+}
+.entitle-phone-registration-cls{
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    padding: 5px 0px 3px 6px;
+    margin-left: 10px;
+    border-left: 3px solid $entitle-left-border-line-color;
+}
+
+.phone-dashboard-confdays-cls .entitle-cls {
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    margin-left: 10px;
+    padding: 5px 0px 3px 6px;
+    border-left: 3px solid #ff4c38;
+}
+
+.phone-dashboard-allevents-cls .x-listitem {
+    background: #F6FCFC;
+}

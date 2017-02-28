@@ -1,0 +1,122 @@
+ .click-cursor {
+ 	cursor: pointer;
+ }
+.upload-div-cls {
+    width: 150px;
+    height: 150px;
+    position: relative;
+    @include border-radius(6px);
+    border: 3px solid $white-color;
+    background: $light-blue-color-d;
+    @include box-shadow($box-shadow-variate);
+}
+.cross-icon-cls {
+    &:before {
+        color: $black-color;
+        content: '\0061' !important;
+        font-family: 'Sencha' !important;
+    }
+}
+.upload-icon-cls {
+    &:before {
+        left: 16%;
+        bottom: 6%;
+        font-size: 120px;
+        position: absolute;
+        color: $white-color;
+        content: '\0042' !important;
+        font-family: 'Sencha' !important;
+    }
+}
+.event-window-icon-cls {
+    &:before {
+        left: 16%;
+        font-size: 120px;
+        position: absolute;
+        color: $white-color;
+        content: '\0043' !important;
+        font-family: 'Sencha' !important;
+    }
+}
+.upload-text-cls {
+    width: 100%;
+    color: #fff;
+    bottom: 0px;
+    padding: 6px;
+    font-size: 12px;
+    text-align: center;
+    position: absolute;
+    display: inline-block;
+    background: linear-gradient(rgba(168, 189, 192, 1), rgba(168, 189, 192, 1));
+}
+.speaker-cancel-cls {
+	top: 15px;
+    left: 15px;
+    color: #000;
+    padding: 0px;
+    font-size: 21px;
+    font-weight: 600;
+    position: absolute;
+    background: transparent !important;
+    border-color: transparent !important;
+}
+.form-cont-cls {    
+    background: $light-blue-color-d;
+}
+.form-panel-cls {
+    .x-formpanel-inner {
+        background: transparent;        
+    }
+}
+.add-speaker-cont-cls {
+    position: relative;
+}
+span.bubble-cls:before {
+    width: 0;
+    height: 0;
+    left: 0px;
+    content: ' ';
+    position: absolute;
+    border: 15px solid;
+    @include transform(translate(-15px, 46px)rotate(-46deg));
+    border-color: $white-color transparent transparent $white-color;
+}
+.form-cont-cls {
+	.x-textinput {
+	    @include border-radius(6px);
+	}
+}
+
+.upload-user-div-cls {
+    width: 145px;
+    height: 145px;
+    position: relative;
+    background: #d0ecef;
+    @include border-radius(6px);
+}
+.datepicker-expand-cls{
+  margin: 0em 30.5% 0em 0.5em !important;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+ .x-button-alt{
+   background-color: #FF4B39;
+   @include border-radius(4px);
+   padding: 0.6385em 1.2em !important;
+   
+ }
+ .x-button-action{
+  background-color:#1E427B;
+   @include border-radius(4px);
+   padding: 0.6385em 1.2em !important;
+ }
+ .x-titlebar{
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+ }
+ .x-titlebar-left{
+  position: relative; 
+  left: 83%;
+ }
+
+    
+}

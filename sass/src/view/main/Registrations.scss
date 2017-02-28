@@ -1,0 +1,71 @@
+.reg-name-icon-cls {
+	font-family: 'Sencha' !important;
+	padding: 0px 5px 0px 0px;
+    &:before {
+        content: '\0058' !important;
+        font-size: 21px;
+        font-weight: 500;
+	    position: relative;
+	    top: 2px;
+	    color: $grid-icon-header-color;
+    }
+}
+.reg-job-title-icon-cls {
+	font-family: 'Sencha' !important;
+	padding: 0px 5px 0px 0px;
+    &:before {
+        content: '\0057' !important;
+        font-size: 21px;
+        font-weight: 500;
+	    position: relative;
+	    top: 2px;
+	    color: $grid-icon-header-color;
+    }
+}
+.reg-company-icon-cls {
+	font-family: 'Sencha' !important;
+	padding: 0px 5px 0px 0px;
+    &:before {
+        content: '\0056' !important;
+        font-size: 21px;
+        font-weight: 500;
+	    position: relative;
+	    top: 2px;
+	    color: $grid-icon-header-color;
+    }
+}
+.registration-table-cls td{
+	text-align: left;
+	width: 33.33%;
+    padding: 20px 10px;
+    background: #f6fcfc;
+}
+.registration-table-cls{
+	width:100%;
+}
+.registration-container{
+	padding: 5px 10px;
+}
+.registration-name-cls{
+	color: #657fa5;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+}
+.registration-table-header{
+	width:100%;
+}
+.registration-table-header td{
+	text-align: left;
+	width: 33.33%;
+    padding: 10px 10px 10px 4px;
+    background: #fff;
+    font-weight: 600;
+}
+.registration-table-cls td:first-child{
+    -moz-border-radius:6px 0 0 6px;
+    -webkit-border-radius:6px 0 0 6px;
+}
+.registration-table-cls td:last-child{
+    -moz-border-radius:0 6px 6px 0;
+    -webkit-border-radius:0 6px 6px 0;
+}

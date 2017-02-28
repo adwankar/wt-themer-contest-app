@@ -1,0 +1,99 @@
+.notdone-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: right;
+    &:before {
+        content: '\0064' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dark-blue-event-color;
+    }
+}
+.done-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: right;
+    &:before {
+        content: '\004F' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dark-blue-event-color;
+    }
+}
+.emailicon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\0047' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dolist-icon-color;
+    }
+}
+.blogicon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\0045' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dolist-icon-color;
+    }
+}
+.flighticon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\004A' !important;
+        font-size: 27px;
+        color: $dolist-icon-color;
+        position: relative;
+    }
+}
+.registericon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\0048' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dolist-icon-color;
+    }
+}
+.tweeticon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\0054' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dolist-icon-color;
+    }
+}
+.talkicon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    float: left;
+    padding: 0px 10px 0px 5px;
+    &:before {
+        content: '\0049' !important;
+        font-size: 27px;
+        position: relative;
+        color: $dolist-icon-color;
+    }
+}
+.dolist-cls {
+    .x-listitem {
+        padding: 6px 0px;
+    }
+}

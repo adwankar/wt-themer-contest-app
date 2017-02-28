@@ -1,0 +1,42 @@
+//Initiating color variables
+$dolist-icon-color: #00af6e;
+$dark-blue-event-color: #1f4278;
+$dolist-noncheck-icon-color: #dddddd;
+
+$entitle-left-border-line-color: #ff4c38;
+
+$grid-icon-header-color: #76dc86;
+
+$grey-color-event: #4a4a4a;
+
+$soft-lime-green-color: #61de7a;
+
+$dark-grey-d: #dcdcdc;
+$gray-color-a: #adadad;
+
+$light-blue-color-d: #d0ecef;
+
+//Normal color variables
+$white-color: #fff;
+$black-color: #000;
+
+//mixins for clip-path
+@mixin clip-path($clip) {
+	clip-path: $clip;
+	-ms-clip-path: $clip;
+	-moz-clip-path: $clip;
+	-webkit-clip-path: $clip;
+}
+
+//local initiating variables
+$sky-blue-color: #f6fbfc;
+$button-bg-color: #1d437b;
+$bg-color-variate: #f7f7f7;
+$dolist-icon-color: #00b06c;
+$lines-color-variate: #ff4c39;
+$img-thumbnail-color: #d1ecef;
+$toolbar-border-color: #d2ebef;
+$box-shadow-color-variate: #e5e5e5;
+$box-shadow-variate: 0px 3px 6px $box-shadow-color-variate;
+$box-shadow-mobile-variate: 0px 1px 1px 3px $box-shadow-color-variate;
+$box-shadow-variate-bottom: 0px 3px 3px -1px $box-shadow-color-variate;

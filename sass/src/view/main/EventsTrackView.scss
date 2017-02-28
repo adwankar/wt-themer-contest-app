@@ -1,0 +1,186 @@
+.usericon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    &:before {
+        font-size: 27px;
+        position: relative;
+        content: '\0041' !important;
+    }
+}
+.event-title {
+    color: #1C437C;
+    font-weight: 600;
+    padding: 10px 0px 0px 0px;
+     width: 60%;
+    display: inline-table;
+    letter-spacing: 0.5px;
+    margin: 5px 5px 5px 0px;
+}
+.event-manager {
+    padding: 0px 0px 5px 0px;
+}
+.event-time-title {
+    width: 28%;
+    display: inline-table;
+    margin: 5px 5px 5px 0px;
+}
+.location-cls {
+    padding: 10px 20px;
+    background: #F6FCFC;
+}
+.event-title-header{
+    width:100%;
+    border-bottom:1px solid #D0ECEF;
+}
+.user-img-cls{
+    width: 140px;
+    height: 140px;
+    @include border-radius(5px);    
+}
+.event-user-cls{
+    padding:4px;
+    text-align: center;
+    background: $white-color;
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+}
+.td-user-cls{
+    padding: 10px;
+    background: #f6fcfc;
+    border-bottom: 2px solid #e5e5e5;
+}
+.event-container-cls {
+    text-align:center;
+     @include border-radius(0px 6px 6px 0px);
+    .x-innerhtml{
+        font-size: 18px;
+        font-weight: 400;
+        color: $white-color;
+    }
+}
+.location-event-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#79D4B1;
+        font-size: 27px;
+        position: relative;
+        content: '\0055' !important;
+    }
+}
+.event-title-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 35px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#79D4B1;
+        font-size: 27px;
+        position: relative;
+        content: '\0043' !important;
+    }
+}
+.calendar-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 24px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#79D4B1;
+        position: relative;
+        content: '\005A' !important;
+    }
+}
+.time-event-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 24px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#79D4B1;
+        position: relative;
+        content: '\0059' !important;
+    }
+}
+.Morning-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 100px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:$white-color;
+        position: relative;
+        content: '\004D' !important;
+    }
+}
+.Afternoon-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 100px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:$white-color;
+        position: relative;
+        content: '\004C' !important;
+    }
+}
+.Evening-icon-cls {
+    font-family: 'Sencha' !important;
+    font-size: 100px;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:$white-color;
+        position: relative;
+        content: '\004B' !important;
+    }
+}
+.event-title-main{
+    padding:40px 20px;
+}
+.user-icon-cls {
+   &:before {
+       bottom: 6%;
+       color: $white-color;
+       font-size: 120px;
+       position: relative;
+       content: '\0042' !important;
+       font-family: 'Sencha' !important;
+   }
+}
+.user-div-cls {
+    width: 134px;
+    height: 134px;
+    position: relative;
+    background: #d0ecef;
+    @include border-radius(6px);
+}
+.eventtrack-dataview-cls{
+    @include border-radius(6px);
+    @include box-shadow($box-shadow-variate);
+}
+.eventtrack-dataview-cls {
+    .x-dataview-item {
+        table {
+            border-collapse: separate;
+        }
+        &:first-child table tr:first-child td:first-child {
+            border-top-left-radius: 10px;
+            border-bottom: 1px solid #d0ecef;
+           // border-right: 1px solid #d0ecef;
+
+        }
+        &:last-child table tr:last-child td:first-child {
+            border-bottom-left-radius: 10px;
+            //box-shadow: 0px 2px 0px #e5e5e5;
+            border-bottom: 1px solid #d0ecef;
+           // border-right: 1px solid #d0ecef;
+        }
+        td{
+         border-right: 1px solid #d0ecef;
+        }
+    }
+}
+

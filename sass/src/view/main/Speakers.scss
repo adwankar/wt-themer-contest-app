@@ -1,0 +1,135 @@
+.speaker-name {
+    color: #1C437C;
+    font-weight: 600;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px solid #1C437C;
+}
+.description-main {
+    color:#6A686A;
+    text-align: center;
+    background: $white-color;
+    padding: 72px 0px 0px 0px;
+    border: 1px solid #F4F4F4;
+    @include border-radius(5px);
+    @include box-shadow(1px 1px 0px #E5E5E4);
+    cursor: pointer;
+}
+.description-cls {
+    padding: 0px 9px 21px 9px;
+}
+.logo-div-cls {
+    padding:0.8em;
+    color:#1C437C;
+    background:$sky-blue-color;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+.speaker-user-cls {
+    z-index: 1;
+    padding:4px;
+    text-align: center;
+    margin-bottom: -57px;
+    @include border-radius(5px);
+}
+.speaker-img-cls {
+    width: 140px;
+    height: 140px;
+    @include border-radius(5px);    
+}
+.image-outer-cls {
+    padding:4px;
+    width: 145px;
+    height: 145px;
+    text-align: center;
+    display: inline-block; 
+    justify-content: center;
+    background: $white-color;
+    border: 1px solid #F4F4F4;
+    @include border-radius(5px);
+    cursor: pointer;
+}
+.speakear-dataview-cls {
+    background: $bg-color-variate;
+    .x-dataview-item  {
+        width:30%;
+        margin:30px 10px 0px 10px;;
+        display: inline-block; 
+    }
+}
+.speaker-name-div{
+    padding: 10px 5px 5px 5px;
+}
+.social-cls{
+    padding:10px;
+}
+
+.speaker-user-image-cls{
+    height:134px;
+    width:134px;
+    @include border-radius(6px);
+}
+.speaker-default-icon-cls{
+    height : 50px;
+    width : 50px;
+    margin-top: 3em;
+    @include border-radius(6px);
+}
+.speaker-default-icon-cls {
+   &:before {
+       bottom: 6%;
+       color: #fff;
+       font-size: 120px;
+       position: relative;
+       content: '\0042' !important;
+       font-family: 'Sencha' !important;
+   }
+}
+
+
+.facebook-cls {
+    font-family: 'Sencha' !important;
+    font-size: 2em;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#3b5998;
+        position: relative;
+        content: '\0066' !important;
+    }
+}
+.linkedin-cls {
+    font-family: 'Sencha' !important;
+    font-size: 2em;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#0077b5;
+        position: relative;
+        content: '\0065' !important;
+    }
+}
+.twitter-cls {
+    font-family: 'Sencha' !important;
+    font-size: 2em;
+    padding-right: 5px;
+    &:before {
+        top:3px;
+        color:#1da1f2;
+        position: relative;
+        content: '\0067' !important;
+    }
+}
+.speakers-panel-cls .x-panel-inner {
+    background: #f7f7f7;
+}
+.speaker-main-div-cls{
+    @include box-shadow(0px 1px 0px #e5e5e5);
+}
+
+/*phone styling*/
+.phone-speakers-cls .x-simplelistitem{
+    margin :1em 1em;
+    @include border-radius(6px);
+    box-shadow: 0px 2px 6px #e5e5e5;
+}

@@ -1,0 +1,261 @@
+html, body {
+            background-color: #F7F7F7 !important;
+        }
+        .appLoadingIndicator img{
+            position: absolute;
+            margin: auto;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;  
+        }
+
+//Panel border radius styles
+.x-desktop .x-dataview.x-container {
+	border-bottom-left-radius:6px;
+	border-bottom-right-radius:6px;
+}
+.x-desktop .x-panel-header{
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+}
+.x-desktop .x-panel-inner {
+	border-bottom-left-radius: 5px;
+	border-bottom-right-radius: 5px;
+}
+
+.x-managed-borders {
+	.x-docked-top {
+		border-bottom-width: 1px !important;
+	}
+}
+
+//Scrollbar CSS styles
+/*Custom scroolbar*/
+.x-desktop .x-scroller::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+/* Track */
+.x-desktop .x-scroller::-webkit-scrollbar-track {
+    @include border-radius(10px);
+    @include box-shadow(inset 0 0 6px rgba(0,0,0,0.3)); 
+}
+ 
+/* Handle */
+.x-desktop .x-scroller::-webkit-scrollbar-thumb {
+    background: $black-color; 
+    @include border-radius(10px);
+    @include box-shadow(inset 0 0 6px rgba(0,0,0,0.5));
+}
+.x-desktop .x-scroller::-webkit-scrollbar-thumb:window-inactive {
+	background: rgba(255,0,0,0.4); 
+}
+
+//Title bar overrides
+.x-titlebar {
+	box-shadow: @include box-shadow($box-shadow-variate);
+}
+//container bg color
+.cont-ground-cls {
+	background: $bg-color-variate;
+}
+
+//toolbar bg color
+.toolbar-ground-cls {
+	background: $bg-color-variate;
+	.x-toolbar-inner {
+		border-bottom: 1px solid $toolbar-border-color;		
+	}
+}
+.sidebar-cls {
+	width: 4%;
+	.x-container {
+    background: #fff;
+}
+.x-inner {
+    background: #fff;
+}
+}
+
+//TTF file included font-family
+@font-face {
+    font-family: 'Sencha';
+    src: url('fonts/Sencha.ttf');
+    font-weight: 100;
+    font-style: normal;
+}
+
+//Navigation icons
+.dashboard-icon-cls {
+	font-family: 'Sencha' !important;
+	font-size: 23px;
+	font-weight: 600;
+    &:before {
+        content: '\0063' !important;
+    }
+}
+.speakers-icon-cls {
+	font-family: 'Sencha' !important;
+	font-size: 23px;
+	font-weight: 600;
+    &:before {
+        content: '\0049' !important;
+    }
+}
+.events-icon-cls {
+	font-family: 'Sencha' !important;
+	font-size: 23px;
+	font-weight: 600;
+    &:before {
+        content: '\0043' !important;
+    }
+}
+.attendees-icon-cls {
+	font-family: 'Sencha' !important;
+	font-size: 23px;
+	font-weight: 600;
+    &:before {
+        content: '\0041' !important;
+    }
+}
+
+.toolbar-title-cls {
+	font-weight: 600;
+	font-size: 0.85em;
+	padding: 5px 0px 3px 6px;
+	color: $dark-blue-event-color;
+	border-left: 3px solid $entitle-left-border-line-color;
+}
+
+//Titlebar styles
+.sencha-text-cls {
+	padding: 0px 0px 0px 21px;
+}
+.sencha-logo-cls {
+	top: 4px;
+	width: 21px;
+	position: relative;
+}
+.nav-btn-cls {
+	&.x-button {
+		font-weight: 300;
+		background: $white-color;
+		border-color: $white-color;
+		&.x-button-pressing {
+			background: $soft-lime-green-color;
+			border-color: $soft-lime-green-color;
+		}
+		&.x-button-pressed {
+			background: $soft-lime-green-color;
+			border-color: $soft-lime-green-color;
+		}
+	}	
+}
+.nav-txt-btn-cls {
+	&.x-button {
+	    height: 15px;
+	    height: 45px;
+	    font-size: 18px;
+		font-weight: 300;
+		padding: 0px 50px;
+		color: $gray-color-a;
+		background: $white-color;
+		border-color: $white-color;
+		&.x-button-pressing {
+			color: $black-color;
+		}
+		&.x-button-pressed {
+			color: $black-color;
+		}
+	}	
+}
+.nav-overlay-cls {
+	width: 24em;
+	height: 100%;
+	margin: 4.9em 0 0 4%;
+	@include box-shadow(1px 3px 3px $box-shadow-color-variate);
+	.x-panel-header {
+		border: none !important;
+		background: $white-color;
+	}
+	.x-tool-close {
+		right: 10px;
+		font-size: 21px;
+		font-weight: 600;
+		position: absolute;
+		color: $black-color;
+		font-family: 'Sencha' !important;
+		&:before {
+			content: '\0061' !important;
+		}
+	}
+}
+.nav-seg-btn-cls {
+	margin: 10em 0 0 0;
+}
+.nav-overlay-seg-btn-cls {
+	margin: 9.5em 0 0 0;
+}
+.side-toggle-btn-cls {
+	&.x-button {
+		font-weight: 300;
+		background: $white-color;
+		border-color: $white-color;
+		.x-button-icon {
+			color: $black-color;
+		}
+	}
+}
+.side-toggle-hide-btn-cls {
+	&.x-button {
+		visibility: hidden;
+	}
+}
+
+/************Phone style************/
+.phone-sidebar-menu-cls {
+	padding: 7em 0 0 0;
+	background: $white-color;
+}
+
+.x-dock-body{
+    background: $bg-color-variate;
+    
+}
+.main-view-cls .x-dock-body{
+	margin-top: 0.1em;
+}
+
+//all fields placholde and font size style
+.x-field .x-input-el {
+    padding: 1.54em 0.4em 1.54em 1em;
+    font-size: 14px;
+}
+.phone-main-cls .x-dataview-inner {
+    background: #f7f7f7;
+}
+.phone-toolbar-cls{
+	background: #fff;
+	.x-toolbar-inner{
+		@include box-shadow($box-shadow-variate);
+	}
+}
+.phone-main-cls .x-body .x-scroller {
+    background: #f7f7f7;
+}
+
+.sencha-mobile-text-cls{
+	text-align: center;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+.sencha-mobile-logo-cls{
+	top: 4px;
+    width: 25px;
+    position: relative;
+    height: 25px;
+}
+.floated-win-cls{
+	margin:4.9em 0 0 0;
+}

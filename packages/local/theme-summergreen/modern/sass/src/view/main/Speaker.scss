@@ -1,0 +1,7 @@
+.speaker-user-div-cls {
+    width: 134px;
+    height: 134px;
+    position: relative;
+    background: #d0ecef;
+    @include border-radius(6px);
+}

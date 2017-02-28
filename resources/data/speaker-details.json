@@ -1,0 +1,72 @@
+[{
+	"name": "Gloria Wright",
+	"speakers_id": "01",
+	"job_title": "Account Executive",
+	"company": "Denesik and Sons",
+	"session_title": "Persevering clear-thinking secured line",
+	"session_description": "In hac habitasse platea dictumst. Etiam faucibus cursus urna. Ut tellus.",
+	"bio": "Duis bibendum. Morbi non quam nec dui luctus rutrum. Nulla tellus.",
+	"photo": "https://robohash.org/deseruntdistinctiodolores.png?size=50x50&set=set1",
+	"time": "11:10 AM",
+	"date": "1/2/2017",
+	"sessiondetails": [{
+		"session_title": "Persevering clear-thinking secured line",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}, {
+		"session_title": "Persevering clear-thinking secured line -2",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}, {
+		"session_title": "Persevering clear-thinking secured line -3",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}]
+}, {
+	"name": "Laura Robinson",
+	"speakers_id": "02",
+	"job_title": "Accounting Assistant III",
+	"company": "Padberg, Koelpin and Murray",
+	"session_title": "Organic system-worthy support",
+	"session_description": "Vestibulum ac est lacinia nisi venenatis tristique. Fusce congue, diam id ornare imperdiet, sapien urna pretium nisl, ut volutpat sapien arcu sed augue. Aliquam erat volutpat.",
+	"bio": "Aliquam quis turpis eget elit sodales scelerisque. Mauris sit amet eros. Suspendisse accumsan tortor quis turpis.",
+	"photo": "https://robohash.org/doloresestmolestiae.png?size=50x50&set=set1",
+	"time": "4:56 PM",
+	"date": "1/4/2017",
+	"sessiondetails": [{
+		"session_title": "Persevering clear-thinking secured line",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}, {
+		"session_title": "Persevering clear-thinking secured line -2",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}]
+}, {
+	"name": "Dorothy Owens",
+	"job_title": "Senior Quality Engineer",
+	"speakers_id": "03",
+	"company": "Daugherty, Strosin and Leuschke",
+	"session_title": "Focused content-based standardization",
+	"session_description": "Aenean lectus. Pellentesque eget nunc. Donec quis orci eget orci vehicula condimentum.",
+	"bio": "Maecenas leo odio, condimentum id, luctus nec, molestie sed, justo. Pellentesque viverra pede ac diam. Cras pellentesque volutpat dui.",
+	"photo": "https://robohash.org/suntquidemlibero.png?size=50x50&set=set1",
+	"time": "11:45 AM",
+	"date": "1/4/2017",
+	"sessiondetails": [{
+		"session_title": "Persevering clear-thinking secured line",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}, {
+		"session_title": "Persevering clear-thinking secured line -2",
+		"session_description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		"time": "Monday, 9:00AM-11:00AM",
+		"date": "Mar 24, 2017"
+	}]
+}]
