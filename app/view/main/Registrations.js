@@ -18,17 +18,16 @@ Ext.define('ThemerContestApp.view.main.Registrations', {
             '<span class="reg-job-title-icon-cls"></span>Job Title</td><td>' +
             '<span class="reg-company-icon-cls"></span>Company</td></tr></table></div>'
     }, {
-        xtype: 'dataview',
+        xtype: 'list',
         store: 'Registration',
         scrollable: true,
+        cls:'registration-list-cls',
         itemTpl: [
-            '<div class="registration-container">',
             '<table class="registration-table-cls"><tr>',
             '<td class="registration-name-cls">{name}</td>',
             '<td>{job_title}</td>',
             '<td>{company}</td>',
-            '</tr></table>',
-            '</div>'
+            '</tr></table>'
         ]
     }]
 });

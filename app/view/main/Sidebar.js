@@ -20,6 +20,8 @@ Ext.define('ThemerContestApp.view.main.Sidebar', {
 
 	initialize: function() {
 		if (!this.navigatorOverlay) {
+			var me = this;
+
 			this.navigatorOverlay = Ext.Viewport.add({
 				xtype: 'panel',
 				floated: true,
@@ -50,22 +52,30 @@ Ext.define('ThemerContestApp.view.main.Sidebar', {
 						text: 'Dashboard',
 						pressed: true,
 						cls: 'nav-txt-btn-cls',
-						handler: 'onSelectionChange'
+						handler: function(button, e) {
+							me.fireEvent('navBtnClick', button, e);
+						}
 					}, {
 						name: 'speakers',
 						text: 'Speakers',
 						cls: 'nav-txt-btn-cls',
-						handler: 'onSelectionChange'
+						handler: function(button, e) {
+							me.fireEvent('navBtnClick', button, e);
+						}
 					}, {
 						text: 'Events',
 						name: 'allevents',
 						cls: 'nav-txt-btn-cls',
-						handler: 'onSelectionChange'
+						handler: function(button, e) {
+							me.fireEvent('navBtnClick', button, e);
+						}
 					}, {
 						name: 'attendees',
 						text: 'Attendees',
 						cls: 'nav-txt-btn-cls',
-						handler: 'onSelectionChange'
+						handler: function(button, e) {
+							me.fireEvent('navBtnClick', button, e);
+						}
 					}]
 				}, {
 					xtype: 'dataview',
@@ -88,14 +98,18 @@ Ext.define('ThemerContestApp.view.main.Sidebar', {
 				}],
 				listeners: {
 					close: function() {
-						Ext.ComponentQuery.query('[reference=sideToggle]')[0].removeCls('side-toggle-hide-btn-cls');
+						me.down('[reference=sideToggle]').removeCls('side-toggle-hide-btn-cls');
 					},
 					hide:function(){
-                       Ext.ComponentQuery.query('[reference=sideToggle]')[0].removeCls('side-toggle-hide-btn-cls');
+                       me.down('[reference=sideToggle]').removeCls('side-toggle-hide-btn-cls');
 					}
 				}
 			});
 		}
+	},
+
+	listeners: {
+		navBtnClick: 'onSelectionChange'
 	},
 
 	items: [{
@@ -109,7 +123,6 @@ Ext.define('ThemerContestApp.view.main.Sidebar', {
 		   this.addCls('side-toggle-hide-btn-cls');
 
 			this.up('sidebar').navigatorOverlay.show();
-			var main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
 		}
 	}, {
 		xtype: 'navigation'

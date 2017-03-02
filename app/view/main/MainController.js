@@ -52,12 +52,12 @@ Ext.define('ThemerContestApp.view.main.MainController', {
      */
     onSelectionChange: function(btn, e) {
         var to = btn.name;
-        var steppedBtn = Ext.ComponentQuery.query('[name=' + to + ']');
 
-        if (steppedBtn && steppedBtn.length > 1) {
-            steppedBtn[0].setPressed(true);
-            steppedBtn[1].setPressed(true);
-        }
+        var sidebar = this.lookupReference('sidebar');
+        var navigation = this.lookupReference('navigation');
+
+        sidebar.navigatorOverlay.down('[name=' + to + ']').setPressed(true);
+        navigation.down('[name=' + to + ']').setPressed(true);
 
         if (to) {
             this.redirectTo(to);
@@ -72,25 +72,25 @@ Ext.define('ThemerContestApp.view.main.MainController', {
     setCurrentView: function(xtype) {
         if (this.platform !== 'phone') {
             var refs = this.getReferences();
+            /*var mainView = this.getView();
+            this.contentCard = mainView.down('content');*/
 
             (refs) ? (this.contentCard = refs.contentCard) : '';
 
-            if (!this.contentCard) {
-                this.contentCard = Ext.ComponentQuery.query('[reference=contentCard]')[0];
-            }
-
             // var node = this.navigation.getStore().findNode('xtype', xtype);
             // item = this.contentCard.child('component[xtype=' + xtype + ']');
-            if (xtype === 'dashboard') {
-                item = this.contentCard.add({
-                    xtype: xtype
-                });
-            } else {
-                item = this.contentCard.add({
-                    xtype: xtype
-                });
-            }
-            this.contentCard.setActiveItem(xtype);
+            if(this.contentCard) {
+                if (xtype === 'dashboard') {
+                    item = this.contentCard.add({
+                        xtype: xtype
+                    });
+                } else {
+                    item = this.contentCard.add({
+                        xtype: xtype
+                    });
+                }
+                this.contentCard.setActiveItem(xtype);
+            }            
         }
     },
 
@@ -103,7 +103,8 @@ Ext.define('ThemerContestApp.view.main.MainController', {
         if (this.platform === 'phone') {
             item = this.contentCard.child('component[xtype=' + xtype + ']');
             this.contentCard.setActiveItem(xtype);
-            phoneTitleText = (xtype == 'dashboard') ? xtype.toUpperCase() : '<div class="entitle-cls">' + xtype.toUpperCase() + '</div>';
+            phoneTitleText = (xtype == 'dashboard') ? xtype.toUpperCase() : '<div class="toolbar-main-title-cls"><span class="line-toolbar-icon-cls"></span><span class="toolbar-title-cls">' + xtype.toUpperCase() + '</span></div>';
+            
             this.phoneBar.setTitle(phoneTitleText);
 
             if (!togglehide) {
@@ -138,6 +139,7 @@ Ext.define('ThemerContestApp.view.main.MainController', {
      * Sets default view for the phones
      */
     onPhoneViewRender: function(pnl) {
+        Ext.get('pre-loading').hide();
         var refs = this.getReferences();
         this.contentCard = refs.contentCard;
         this.phoneBar = refs.phonebar;

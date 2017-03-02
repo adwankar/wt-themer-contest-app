@@ -9,6 +9,7 @@ Ext.define('ThemerContestApp.view.main.DaysToConference', {
     ui: 'days-to-conference',
     header: true,
     cls: 'confdays-cls',
+    iconCls:'line-icon-cls',
     title: '<div class="entitle-cls">To Conference</div>',
     layout: {
         type: 'hbox',

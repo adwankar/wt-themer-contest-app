@@ -143,7 +143,7 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
 
         if (needEvent) {
             scope.down('[itemId=htmlIconContent]').el.on('click', function() {
-                var fileField = Ext.ComponentQuery.query('fileinput')[0];
+                var fileField = scope.down('fileinput');
 
                 fileField.inputElement.dom.click();
             }, null, {
@@ -176,21 +176,14 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
             xtype: 'button',
             iconCls: 'cross-icon-cls',
             cls: 'speaker-cancel-cls',
-            handler: function() {
-                var main, mainViewModel,
-                    panelViewModel;
-
-                main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
-                mainViewModel = main.getViewModel();
-
-                panelViewModel = this.up('panel').getViewModel();
-
-                mainViewModel.get(panelViewModel.get('viewName')).hide();
+            handler: function(button, e) {
+                button.up('[floatComponent=true]').destroy();
             }
         }, {
             margin: '100% 0',
-            bind: {
-                html: '<div class="attendee-head-title">{titleText}</div>'
+            bind: { 
+             html: '<div class=""><span class="line-window-title-icon-cls"></span><span class="attendee-head-title">{titleText}</span></div>',
+
             }
         }, {
             xtype: 'filefield',
@@ -204,16 +197,8 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
             xtype: 'polygonbutton',
             text: 'Done',
             extraCls: 'new-done-cls',
-            handler: function() {
-                var main, mainViewModel,
-                    panelViewModel;
-
-                main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
-                mainViewModel = main.getViewModel();
-
-                panelViewModel = this.up('panel').getViewModel();
-
-                mainViewModel.get(panelViewModel.get('viewName')).hide();
+            handler: function(button, e) {
+                button.up('[floatComponent=true]').destroy();
             }
         }]
     }]

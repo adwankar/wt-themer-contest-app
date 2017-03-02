@@ -18,6 +18,12 @@ Ext.define('ThemerContestApp.view.main.Main', {
         align: 'stretch'
     },
 
+    initialize: function() {
+        this.callParent(arguments);
+
+        Ext.get('pre-loading').hide();
+    },
+
     itemId: 'app-main',
     cls: 'main-view-cls',
     items: [{

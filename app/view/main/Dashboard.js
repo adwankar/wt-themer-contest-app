@@ -26,7 +26,6 @@ Ext.define('ThemerContestApp.view.main.Dashboard', {
         items: [{
             xtype: 'confdays',
             height: 214,
-            title: '<div class="entitle-cls">To Conference</div>',
             width: '48%'
         }, {
             xtype: 'spacer',
@@ -35,6 +34,7 @@ Ext.define('ThemerContestApp.view.main.Dashboard', {
             xtype: 'panel',
             ui: 'total-registrations',
             header: true,
+            iconCls:'line-icon-cls',
             title: '<div class="entitle-cls">Total Registrations</div>',
             width: '51%',
             cls: 'total-reg-cls',
@@ -78,6 +78,7 @@ Ext.define('ThemerContestApp.view.main.Dashboard', {
             ui: 'new-registrations',
             width: '35%',
             cls: 'new-reg-cls',
+            iconCls:'line-icon-cls',
             title: '<div class="entitle-cls">New Registrations</div>',
             layout: 'fit',
             items: [{
@@ -93,6 +94,7 @@ Ext.define('ThemerContestApp.view.main.Dashboard', {
             layout: {
                 type: 'hbox'
             },
+            iconCls:'line-icon-cls',
             title: '<div class="entitle-cls">All Events</div>',
             cls: 'all-events-cls',
             items: [{
@@ -108,6 +110,7 @@ Ext.define('ThemerContestApp.view.main.Dashboard', {
             ui: 'to-do-list',
             cls: 'do-list-cls',
             width: '24%',
+            iconCls:'line-icon-cls',
             title: '<div class="entitle-cls">To Do List</div>',
             layout: 'fit',
             items: [{

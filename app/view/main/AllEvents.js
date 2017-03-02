@@ -13,7 +13,7 @@ Ext.define('ThemerContestApp.view.main.AllEvents', {
 		xtype: 'toolbar',
 		ui: 'morning-toolbar',
 		cls: 'toolbar-ground-cls',
-		title: '<div class="toolbar-title-cls">Events</div>',
+        title: '<div class="toolbar-main-title-cls"><span class="line-toolbar-icon-cls"></span><span class="toolbar-title-cls">Events</span></div>',
 		height: 70,
 		margin: '10 0 10 25',
 		docked: 'top',
@@ -24,42 +24,37 @@ Ext.define('ThemerContestApp.view.main.AllEvents', {
 				iconCls: 'plus-icon-cls',
 				margin: '0 20 10',
 				handler: function(btn) {
-					var mainViewModel = this.up('main').getViewModel();
-
-					if (!mainViewModel.get('eventOverlay')) {
-						mainViewModel._data.eventOverlay = Ext.Viewport.add({
-							xtype: 'panel',
-							floated: true,
-							hideOnMaskTap: true,
-							width: '100%',
-							height: '100%',
-							cls:'floated-win-cls',
-                            autoScroll: true,  
-                            modal: true,
-							showAnimation: {
-								type: 'fadeIn',
-								duration: 250,
-								easing: 'ease-out'
-							},
-							hideAnimation: {
-								type: 'fadeOut',
-								duration: 250,
-								easing: 'ease-out'
-							},
-							viewModel: {
-								data: {
-									titleText: 'Add Event',
-									viewName: 'eventOverlay'
-								}
-							},
-							centered: true,
-							items: [{
-								xtype: 'addrelativewindow'
-							}]
-						});
-					}
-
-					mainViewModel.get('eventOverlay').show();
+					Ext.Viewport.add({
+						xtype: 'panel',
+						floated: true,
+						floatComponent: true,
+						hideOnMaskTap: true,
+						width: '100%',
+						height: '100%',
+						cls:'floated-win-cls',
+                        autoScroll: true,  
+                        modal: true,
+						showAnimation: {
+							type: 'fadeIn',
+							duration: 250,
+							easing: 'ease-out'
+						},
+						hideAnimation: {
+							type: 'fadeOut',
+							duration: 250,
+							easing: 'ease-out'
+						},
+						viewModel: {
+							data: {
+								titleText: 'Add Event',
+								viewName: 'eventOverlay'
+							}
+						},
+						centered: true,
+						items: [{
+							xtype: 'addrelativewindow'
+						}]
+					}).show();
 				}
 			}
 		]

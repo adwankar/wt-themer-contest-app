@@ -38,7 +38,7 @@
 	text-align: left;
 	width: 33.33%;
     padding: 20px 10px;
-    background: #f6fcfc;
+   // background: #f6fcfc;
 }
 .registration-table-cls{
 	width:100%;
@@ -68,4 +68,13 @@
 .registration-table-cls td:last-child{
     -moz-border-radius:0 6px 6px 0;
     -webkit-border-radius:0 6px 6px 0;
+}
+.registration-list-cls{
+	.x-listitem{
+	margin:0.6154em 0.77em;
+	@include border-radius(6px);
+	}
+	.x-listitem-body{
+	padding: 0.6154em 0.77em 0.6154em 0.5em;
+	}
 }

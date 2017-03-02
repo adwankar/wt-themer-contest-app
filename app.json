@@ -451,7 +451,8 @@
          * List of items in the CACHE MANIFEST section
          */
         "cache": [
-            "index.html"
+            "index.html",
+            "resources/images/pre-loader.gif"
         ],
         /**
          * List of items in the NETWORK section

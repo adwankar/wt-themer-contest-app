@@ -26,6 +26,7 @@ Ext.define('ThemerContestApp.view.phone.main.Dashboard', {
         header: true,
         height: 400,
         cls:'phone-dashboard-registration-cls',
+        iconCls:'line-icon-cls',
         title: '<div class="entitle-phone-cls">Total Registrations<div class="float-text-cls">736/1000</div></div>',
         layout: {
             type: 'hbox',
@@ -54,12 +55,14 @@ Ext.define('ThemerContestApp.view.phone.main.Dashboard', {
         xtype: 'registrations',
         title: '<div class="entitle-phone-cls">New Registrations</div>',
         hideHeaders: true,
+        iconCls:'line-icon-cls',
         height: 400,
         cls:'phone-dashboard-registration-cls'
     }, {
         xtype: 'panel',
         title: '<div class="entitle-phone-cls">All Events</div>',
         height: 400,
+        iconCls:'line-icon-cls',
         cls:'phone-dashboard-allevents-cls',
         scrollable: true,
         items: [{
@@ -69,6 +72,7 @@ Ext.define('ThemerContestApp.view.phone.main.Dashboard', {
         xtype: 'panel',
         title: '<div class="entitle-phone-cls">To Do List</div>',
         cls:'phone-dashboard-dolist-cls',
+        iconCls:'line-icon-cls',
         items: [{
             xtype: 'dolist'
         }]

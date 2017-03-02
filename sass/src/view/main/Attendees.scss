@@ -1,8 +1,19 @@
 .attendee-head-title {
 	font-weight: 600;
-	padding: 9px 0px 9px 12px;
+	padding: 9px 0px 9px 0px;
 	color: $dark-blue-event-color;
-	border-left: 3px solid $entitle-left-border-line-color;
+	//border-left: 3px solid $entitle-left-border-line-color;
+}
+.line-window-title-icon-cls {
+	font-family: 'Sencha' !important;
+	font-weight: 600;
+    &:before {
+        content: '\0068' !important;
+	    font-size:36px;
+        color:$entitle-left-border-line-color;
+        position: relative;
+        top: 10px;
+    }
 }
 .attendee-view-cls {
 	text-align: center;

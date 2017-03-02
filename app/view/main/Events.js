@@ -9,6 +9,7 @@ Ext.define('ThemerContestApp.view.main.Events', {
     xtype: 'events',
     height: '100%',
     width: '100%',
+    cls:'events-list-cls',
     fullscreen: true,
     scrollable: 'y',
     itemTpl: [

@@ -70,14 +70,14 @@
     @include box-shadow(0px 1px 0px #e5e5e5);
     background:transparent;
     display: inline-flex;
-    height: 540px;
+    height:508px;
 }
 .speaker-right-view-cls{
 	width: 60%;
     float: left;
     border-left: 1px solid #d0ecef;
     overflow: auto;
-    height: 440px;
+    height: auto;
 }
 .speaker-left-view-cls{
 	width: 40%;

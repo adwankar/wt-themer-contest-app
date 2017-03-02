@@ -18,6 +18,7 @@ html, body {
 .x-desktop .x-panel-header{
 	border-top-left-radius: 5px;
 	border-top-right-radius: 5px;
+	padding: 0.75em 0.94em 0.75em 0em;
 }
 .x-desktop .x-panel-inner {
 	border-bottom-left-radius: 5px;
@@ -29,6 +30,16 @@ html, body {
 		border-bottom-width: 1px !important;
 	}
 }
+.x-panel-title{
+	
+ .x-panel-title-icon.x-panel-title-icon-left{
+	margin-right:0px !important;
+}
+ .x-panel-title-icon{
+	width:0.8em;
+}
+}
+
 
 //Scrollbar CSS styles
 /*Custom scroolbar*/
@@ -95,6 +106,26 @@ html, body {
         content: '\0063' !important;
     }
 }
+.line-icon-cls {
+	font-family: 'Sencha' !important;
+	font-size: 23px;
+	font-weight: 600;
+    &:before {
+        content: '\0068' !important;
+        color:$entitle-left-border-line-color;
+    }
+}
+.line-toolbar-icon-cls {
+	font-family: 'Sencha' !important;
+	font-weight: 600;
+    &:before {
+        content: '\0068' !important;
+	    font-size:30px;
+        color:$entitle-left-border-line-color;
+        position: relative;
+        top: 6px;
+    }
+}
 .speakers-icon-cls {
 	font-family: 'Sencha' !important;
 	font-size: 23px;
@@ -123,9 +154,9 @@ html, body {
 .toolbar-title-cls {
 	font-weight: 600;
 	font-size: 0.85em;
-	padding: 5px 0px 3px 6px;
+	padding: 5px 0px 3px 0px;
 	color: $dark-blue-event-color;
-	border-left: 3px solid $entitle-left-border-line-color;
+	//border-left: 3px solid $entitle-left-border-line-color;
 }
 
 //Titlebar styles
@@ -173,11 +204,12 @@ html, body {
 .nav-overlay-cls {
 	width: 24em;
 	height: 100%;
-	margin: 4.9em 0 0 4%;
-	@include box-shadow(1px 3px 3px $box-shadow-color-variate);
+	margin: 4.95em 0 0 4%;
+	@include box-shadow(3px 3px 3px $box-shadow-color-variate !important);
 	.x-panel-header {
 		border: none !important;
 		background: $white-color;
+	border-top-left-radius: 0px !important;
 	}
 	.x-tool-close {
 		right: 10px;
@@ -258,4 +290,8 @@ html, body {
 }
 .floated-win-cls{
 	margin:4.9em 0 0 0;
+}
+.toolbar-main-title-cls {
+    display: inline-block;
+    height: 60px;
 }

@@ -20,16 +20,17 @@ Ext.define('ThemerContestApp.view.main.SpeakerDetailView', {
               text: 'Back',
               iconCls: 'x-fa fa-chevron-left backbtn',
               margin: '0 20 10', 
-              handler: 'onSpeakerBackButtonTap' 
-            }
-             
+              handler: function(btn, e) {
+                btn.up('speakerdetailview').fireEvent('onspeakerbackbuttontap', btn, e);
+              }
+            }             
         ]
     }, {
         xtype: 'dataview',
         scrollable: false,
         reference: 'speakerDetailsDataView',
         cls:'speakersdetailsview-cls',
-        height: "80%",
+       // height: "80%",
         emptyText: 'No Data to display',
         itemTpl: [
             '<div class ="speaker-details-div-cls">',
@@ -87,5 +88,9 @@ Ext.define('ThemerContestApp.view.main.SpeakerDetailView', {
                 }
             }
         ]
-    }]
+    }],
+
+    listeners : {
+        onspeakerbackbuttontap : 'onSpeakerBackButtonTap'
+    }
 })

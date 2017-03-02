@@ -15,7 +15,7 @@ Ext.define('ThemerContestApp.view.main.Attendees', {
         xtype: 'toolbar',
         ui: 'attendees-toolbar',
         cls: 'toolbar-ground-cls',
-        title: '<div class="toolbar-title-cls">Attendees</div>',
+        title: '<div class="toolbar-main-title-cls"><span class="line-toolbar-icon-cls"></span><span class="toolbar-title-cls">Attendees</span></div>',
         height: 70,
         margin: '10 0 10 25',
         docked: 'top',
@@ -26,41 +26,37 @@ Ext.define('ThemerContestApp.view.main.Attendees', {
                 margin: '0 20 10',
                 iconCls: 'plus-icon-cls',
                 handler: function(btn) {
-                    var mainViewModel = this.up('main').getViewModel();
-
-                    if (!mainViewModel.get('attendeeOverlay')) {
-                        mainViewModel._data.attendeeOverlay = Ext.Viewport.add({
-                            xtype: 'panel',
-                            floated: true,
-                            hideOnMaskTap: true,
-                            width: '100%',
-                            height: '100%',
-                            autoScroll: true,
-                            cls:'floated-win-cls', 
-                            modal: true,
-                            showAnimation: {
-                                type: 'fadeIn',
-                                duration: 250,
-                                easing: 'ease-out'
-                            },
-                            hideAnimation: {
-                                type: 'fadeOut',
-                                duration: 250,
-                                easing: 'ease-out'
-                            },
-                            viewModel: {
-                                data: {
-                                    titleText: 'Add Attendee',
-                                    viewName: 'attendeeOverlay'
-                                }
-                            },
-                            centered: true,
-                            items: [{
-                                xtype: 'addrelativewindow'
-                            }]
-                        });
-                    }
-                    mainViewModel.get('attendeeOverlay').show();
+                    Ext.Viewport.add({
+                        xtype: 'panel',
+                        floated: true,
+                        hideOnMaskTap: true,
+                        floatComponent: true,
+                        width: '100%',
+                        height: '100%',
+                        autoScroll: true,
+                        cls:'floated-win-cls', 
+                        modal: true,
+                        showAnimation: {
+                            type: 'fadeIn',
+                            duration: 250,
+                            easing: 'ease-out'
+                        },
+                        hideAnimation: {
+                            type: 'fadeOut',
+                            duration: 250,
+                            easing: 'ease-out'
+                        },
+                        viewModel: {
+                            data: {
+                                titleText: 'Add Attendee',
+                                viewName: 'attendeeOverlay'
+                            }
+                        },
+                        centered: true,
+                        items: [{
+                            xtype: 'addrelativewindow'
+                        }]
+                    }).show();
                 }
             }
         ]

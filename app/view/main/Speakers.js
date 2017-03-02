@@ -12,7 +12,7 @@ Ext.define('ThemerContestApp.view.main.Speakers', {
         xtype: 'toolbar',
         ui: 'speakers-toolbar',
         cls: 'toolbar-ground-cls',
-        title: '<div class="toolbar-title-cls">Speakers</div>',
+        title: '<div class="toolbar-main-title-cls"><span class="line-toolbar-icon-cls"></span><span class="toolbar-title-cls">Speakers</span></div>',
         height: 70,
         margin: '10 0 10 25',
         items: [
@@ -22,42 +22,37 @@ Ext.define('ThemerContestApp.view.main.Speakers', {
                 iconCls: 'plus-icon-cls',
                 margin: '0 20 10',
                 handler: function(btn) {
-                    var mainViewModel = this.up('main').getViewModel();
-
-                    if (!mainViewModel.get('speakerOverlay')) {
-                        mainViewModel._data.speakerOverlay = Ext.Viewport.add({
-                            xtype: 'panel',
-                            floated: true,
-                            cls:'floated-win-cls',
-                            width: '100%',
-                            height: '100%',
-                            hideOnMaskTap: true,
-                            autoScroll: true,  
-                            modal: true,
-                            viewModel: {
-                                data: {
-                                    titleText: 'Add Speaker',
-                                    viewName: 'speakerOverlay'
-                                }
-                            },
-                            showAnimation: {
-                                type: 'fadeIn',
-                                duration: 250,
-                                easing: 'ease-out'
-                            },
-                            hideAnimation: {
-                                type: 'fadeOut',
-                                duration: 250,
-                                easing: 'ease-out'
-                            },
-                            centered: true,
-                            items: [{
-                                xtype: 'addrelativewindow'
-                            }]
-                        });
-                    }
-
-                    mainViewModel.get('speakerOverlay').show();
+                    Ext.Viewport.add({
+                        xtype: 'panel',
+                        floated: true,
+                        cls:'floated-win-cls',
+                        floatComponent: true,
+                        width: '100%',
+                        height: '100%',
+                        hideOnMaskTap: true,
+                        autoScroll: true,  
+                        modal: true,
+                        viewModel: {
+                            data: {
+                                titleText: 'Add Speaker',
+                                viewName: 'speakerOverlay'
+                            }
+                        },
+                        showAnimation: {
+                            type: 'fadeIn',
+                            duration: 250,
+                            easing: 'ease-out'
+                        },
+                        hideAnimation: {
+                            type: 'fadeOut',
+                            duration: 250,
+                            easing: 'ease-out'
+                        },
+                        centered: true,
+                        items: [{
+                            xtype: 'addrelativewindow'
+                        }]
+                    }).show();
                 }
             }
         ]
@@ -99,7 +94,7 @@ Ext.define('ThemerContestApp.view.main.Speakers', {
         ],
         listeners: {
             itemtap: function(list, index, target, record) {
-                var main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
+                var main = this.up('main');
                 main.fireEvent('speakersdetailselect', record);
             }
         }
@@ -114,7 +109,7 @@ Ext.define('ThemerContestApp.view.main.Speakers', {
         cls: 'phone-speakers-cls',
         listeners: {
             itemtap: function(list, index, target, record) {
-                var main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
+                var main = this.up('main');
                 main.fireEvent('speakerselect', record);
             }
         },
@@ -128,7 +123,7 @@ Ext.define('ThemerContestApp.view.main.Speakers', {
             }
         },
         onItemDisclosure: function(record, btn) {
-            var main = Ext.ComponentQuery.query('[itemId=app-main]')[0];
+            var main = this.up('main');
             console.log('main ', main);
             if (main) {
                 main.fireEvent('speakerselect', record, btn);
