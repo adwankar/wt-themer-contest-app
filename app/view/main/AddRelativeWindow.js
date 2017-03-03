@@ -182,7 +182,7 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
         }, {
             margin: '100% 0',
             bind: { 
-             html: '<div class=""><span class="line-window-title-icon-cls"></span><span class="attendee-head-title">{titleText}</span></div>',
+             html: '<div class=""><span class="line-window-title-icon-cls"></span><span class="attendee-head-title">{titleText}</span></div>'
 
             }
         }, {

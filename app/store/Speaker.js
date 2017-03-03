@@ -7,7 +7,7 @@ Ext.define('ThemerContestApp.store.Speaker', {
     extend : 'Ext.data.Store',
     autoLoad : true,
     model : 'ThemerContestApp.model.Speaker',
-    storeId : 'Speaker',
+    storeId : 'Speaker'
     /*sorters : [
         {
             property : 'name',

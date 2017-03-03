@@ -14,7 +14,7 @@ Ext.define('ThemerContestApp.model.SpeakerDetails', {
         {"name" : "bio"},
         {"name" : "photo"},
         {"name" : "time"},
-        {"name" : "date"},
+        {"name" : "date"}
     ],
     //autoLoad: false,
     proxy : {

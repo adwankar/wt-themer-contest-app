@@ -1,9 +1,9 @@
 [
-    {"title" : "Registration", "track" : "Morning", "time" : "Monday, 9:00AM-11:00AM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Registration Startup Track", "track" : "Morning", "time" : "Monday, 11:00AM-12:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Sencha ExtJS Jumpstart Training", "track" : "Afternoon", "time" : "Monday, 1:00PM-3:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Sencha Test Training", "track" : "Afternoon", "time" : "Monday, 3:30PM-4:30PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Tech Talk: ExtJS and Angular 2", "track" : "Evening", "time" : "Monday, 7:00PM-9:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Design Methods for Improved Product Development", "track" : "Evening", "time" : "Monday, 5:00PM-7:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017"},
-    {"title" : "Sencha ExtJS Jumpstart Training", "track" : "Morning", "time" : "Monday, 11:00PM-12:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 25, 2017"}
+    {"title" : "Registration", "track" : "Morning", "time" : "Monday, 9:00AM-11:00AM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017","image" : "resources/images/speakers/4.png"},
+    {"title" : "Registration Startup Track", "track" : "Morning", "time" : "Monday, 11:00AM-12:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017","image" : "resources/images/speakers/3.png"},
+    {"title" : "Sencha ExtJS Jumpstart Training", "track" : "Afternoon", "time" : "Monday, 1:00PM-3:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017","image" : "resources/images/speakers/2.png"},
+    {"title" : "Sencha Test Training", "track" : "Afternoon", "time" : "Monday, 3:30PM-4:30PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017", "image" : "resources/images/speakers/1.png"},
+    {"title" : "Tech Talk: ExtJS and Angular 2", "track" : "Evening", "time" : "Monday, 7:00PM-9:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017","image" : "resources/images/speakers/5.png"},
+    {"title" : "Design Methods for Improved Product Development", "track" : "Evening", "time" : "Monday, 5:00PM-7:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 24, 2017","image" : "resources/images/speakers/6.png"},
+    {"title" : "Sencha ExtJS Jumpstart Training", "track" : "Morning", "time" : "Monday, 11:00PM-12:00PM", "location" : "Aria Resort & Casino in Las Vegas", "date": "Mar 25, 2017", "image" : "resources/images/speakers/2.png"}
 ]

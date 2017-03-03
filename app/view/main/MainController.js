@@ -71,7 +71,8 @@ Ext.define('ThemerContestApp.view.main.MainController', {
      */
     setCurrentView: function(xtype) {
         if (this.platform !== 'phone') {
-            var refs = this.getReferences();
+            var refs = this.getReferences(),
+            dataview;
             /*var mainView = this.getView();
             this.contentCard = mainView.down('content');*/
 
@@ -80,16 +81,23 @@ Ext.define('ThemerContestApp.view.main.MainController', {
             // var node = this.navigation.getStore().findNode('xtype', xtype);
             // item = this.contentCard.child('component[xtype=' + xtype + ']');
             if(this.contentCard) {
-                if (xtype === 'dashboard') {
+                item = this.contentCard.down(xtype);
+                if ( item ) {
+                    this.contentCard.setActiveItem(item);
+                    dataview = item;
+                    if(item.xtype != "allevents" && item.xtype != "attendees"){
+                       dataview = item.down('dataview');
+                    }
+                    if(dataview){
+                        dataview.getScrollable().scrollTo('top',0,false);
+                    }
+                }else{
                     item = this.contentCard.add({
                         xtype: xtype
                     });
-                } else {
-                    item = this.contentCard.add({
-                        xtype: xtype
-                    });
+                this.contentCard.setActiveItem(item);
                 }
-                this.contentCard.setActiveItem(xtype);
+                
             }            
         }
     },

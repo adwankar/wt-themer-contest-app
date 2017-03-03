@@ -60,9 +60,9 @@ Ext.define('ThemerContestApp.view.main.EventTrack', {
             '<tr>',
             '<td class="td-user-cls">',
             '<div class="event-user-cls">',
-            '<div class="user-div-cls"><span class="user-icon-cls"></span></div>',
-            /*'<img src="http://1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png" class="user-img-cls"></img>',
-             */
+            //'<div class="user-div-cls"><span class="user-icon-cls"></span></div>',
+            '<img src="{image}" class="user-img-cls"></img>',
+             
             '<div class="event-title">Alice Schmist</div>',
             '<div class="event-manager">General Manager</div>',
             '</div>',
