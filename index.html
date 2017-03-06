@@ -7,6 +7,26 @@
 
     <title>ThemerContestApp</title>
 
+    <style type="text/css">
+        div#pre-loading {
+            width: 100%;
+            height: 100%;
+            margin: auto;
+            cursor: wait;
+            z-index: 1000;
+            background: #fff;
+            position: absolute;
+        }
+        div#pre-content {
+            width: 100%;
+            height: 100%;
+            background: #fff;
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-image: url(resources/images/pre-loader.gif);
+        }
+    </style>
+
     <!--
     <script type="text/javascript">
         var Ext = Ext || {}; // Ext namespace won't be defined yet...
@@ -105,5 +125,9 @@ a.cache()}c.notifyUpdateReady()},notifyUpdateReady:function(){"checking"!==c.app
 
 </head>
 <body>
+    <div id="pre-loading">
+        <div id="pre-content" class="loader">
+        </div>
+    </div>
 </body>
 </html>
