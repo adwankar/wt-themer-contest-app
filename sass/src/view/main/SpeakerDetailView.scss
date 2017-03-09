@@ -70,7 +70,7 @@
     @include box-shadow(0px 1px 0px #e5e5e5);
     background:transparent;
     display: inline-flex;
-    height:508px;
+    height:428px;
 }
 .speaker-right-view-cls{
 	width: 60%;
@@ -85,7 +85,7 @@
     padding: 9em 0em 0em 3em;
 }
 .speaker-details-title-cls{
-    width: 70%;
+   // width: 70%;
     float: left;
     display: inline-flex;
     padding: 1em 2em;
@@ -106,8 +106,8 @@
     letter-spacing: 0.5px;
 }
 .speaker-details-cls{
-    width:30%;
-    float: left;
+   // width:30%;
+    float: right;
     background: #fff;
     padding: 1em 2em;
 }

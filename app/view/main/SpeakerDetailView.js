@@ -30,7 +30,7 @@ Ext.define('ThemerContestApp.view.main.SpeakerDetailView', {
         scrollable: false,
         reference: 'speakerDetailsDataView',
         cls:'speakersdetailsview-cls',
-       // height: "80%",
+        height: "80%",
         emptyText: 'No Data to display',
         itemTpl: [
             '<div class ="speaker-details-div-cls">',
