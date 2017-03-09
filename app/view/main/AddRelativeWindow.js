@@ -170,7 +170,8 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
         cls: 'add-speaker-cont-cls',
         layout: {
             type: 'vbox',
-            align: 'middle'
+            align: 'middle',
+            pack:'center'
         },
         items: [{
             xtype: 'button',
@@ -180,7 +181,7 @@ Ext.define('ThemerContestApp.view.main.AddRelativeWindow', {
                 button.up('[floatComponent=true]').destroy();
             }
         }, {
-            margin: '100% 0',
+           margin: '100% 0',
             bind: { 
              html: '<div class=""><span class="line-window-title-icon-cls"></span><span class="attendee-head-title">{titleText}</span></div>'
 
