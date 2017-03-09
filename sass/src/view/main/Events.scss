@@ -24,6 +24,7 @@
 	}
 }
 .time-icon-cls {
+    display: inline-block;
 	&:before {
 	    font-size: 1.5em;
 	    content: '\0059' !important;
